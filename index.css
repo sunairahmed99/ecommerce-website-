@@ -1,0 +1,1325 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    max-width: 100%;
+    box-shadow: 10px 10px 8px #888888;
+    z-index: 22;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.nav .logo img{
+    width: 7rem;
+    height: 3rem;
+}
+.nav #items{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    list-style: none;
+    font-weight: 600;
+    z-index: 100;
+}
+.nav form{
+    display: flex;
+    min-width: 18%;
+    background-color: black;
+    border: none;
+    z-index: 100;
+}
+.nav form input{
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    padding: 5px 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    z-index: 100;
+}
+.nav form button{
+    padding: 0px 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+}
+.nav .login{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.nav .cart{
+    font-size: 1.3em;
+}
+#menu1{
+    display: none;
+}
+
+
+.banner{
+    
+    background-image: url('img/hero4.png');
+    background-size: cover;
+    background-position: center  right 35%  ;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.banner span{
+    padding-top: 10px;
+}
+.banner>:nth-child(1){
+    font-size: 1.2rem;
+}
+.banner>:nth-child(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+.banner>:nth-child(3){
+    color: aqua;
+    font-size: 2.8rem;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+.banner>:nth-child(4){
+    padding-top: 15px;
+}
+.banner .btn{
+    padding: 10px 20px;
+    background-color: pink;
+    color: aqua;
+    border-radius: 20%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-left: 9rem;
+}
+
+.feature{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature .pro{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    text-align: center;
+    box-shadow: 5px 5px 3px 6px #888888;
+}
+
+
+.featureproduct{
+    margin-top: 5rem;
+}
+.featureproduct>:nth-child(1){
+    text-align: center;
+}
+.featureproduct>:nth-child(1) h1{
+    font-size: 3.5rem;
+    letter-spacing: 7px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.featureproduct>:nth-child(1) p{
+    color: grey;
+    font-weight: bold;
+}
+.featureproduct .pfea{
+    margin-top: 2rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.featureproduct .pfbox{
+    width: 20rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 4px #888888;
+}
+.featureproduct .pfbox .img{
+    width: 100%;
+    background-color: white;
+    padding: .4rem;
+   
+}
+.featureproduct .pfbox .img img{
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 2rem;
+}
+.featureproduct .pfbox .txt{
+    padding: 10px 20px;
+}
+.featureproduct .pfbox .txt>:nth-child(1){
+    color: grey;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.featureproduct .pfbox .txt>:nth-child(3){
+    color: orange;
+}
+.featureproduct .pfbox .pprice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.featureproduct .pfbox .pprice>:nth-child(1){
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+}
+.featureproduct .pfbox .pprice>:nth-child(2){
+    margin-top: -8px;
+    font-size: 1.3rem;
+    background-color: lightgreen;
+    border-radius: .7rem;
+    padding: 6px 5px 1px 5px;
+    color: green;
+    opacity: .8;
+}
+.featureproduct .pfbox .txt h4{
+    margin: 10px 0px;
+}
+
+.tbanner{
+    text-align: center;
+    margin-top: 3rem;
+    background-image: url('./img/banner/b2.jpg');
+    background-position: center;
+    background-size: contain;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.tbanner h1{
+    padding: 10px;
+}
+.tbanner button{
+    padding: 6px 13px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.crazy-deals{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: 4rem;
+}
+.crazy-deals div{
+    width: 40rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    gap: 1rem;
+    text-transform: capitalize;
+}
+.crazy-deals button{
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+.crazy-deals>:nth-child(1){
+    background-image: url('img/banner/b10.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+.crazy-deals>:nth-child(1) button:hover{
+    background-color: green;
+}
+.crazy-deals>:nth-child(2){
+    background-image: url('img/banner/b17.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.crazy-deals>:nth-child(2) button:hover{
+    background-color: orange;
+}
+
+.season-sale{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+.season-sale div{
+    width: 26rem;
+    height: 28rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    border: none;
+    
+}
+.season-sale div>:nth-child(2){
+    color: red;
+}
+.season-sale>:nth-child(1){
+    background-image: url('img/banner/b7.jpg');
+    background-position: top;
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.season-sale>:nth-child(2){
+    background-image: url('img/banner/b4.jpg');
+    background-position: top;
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
+}
+.season-sale>:nth-child(3){
+    background-image: url('img/banner/b18.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;  
+}
+
+.signup{
+    background-color: blue;
+    
+}
+.signup .sub{
+    margin-top: 2rem;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+   
+
+} 
+.signup .txt{
+    margin-left: 40px;
+}
+.signup .txt p{
+    padding-top: 10px;
+}
+.signup .form{
+    padding-right: 20px;
+    margin-right: 20px;
+    color: white;
+    background-color: white;
+    height: 3rem;
+    width: 32rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.signup .form button{
+    height: 100%;
+    width: 7rem;
+    background-color: aqua;
+    padding: none;
+    margin: none;
+    margin-right: -20px;
+    border: none;
+}
+.signup .form input{
+    height: 100%;
+    padding: 10px;
+    width: 28rem;
+    border: none;
+    outline: none;
+}
+
+.footer{
+    box-shadow: 10px 10px 8px 8px #888888;
+    width: 100%;
+}
+.footer-sub{
+    box-shadow: 10px 10px 8px 8px #888888;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+    
+}
+.footer-sub .sme{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* shop page */
+
+#shopbanner{
+    background-image: url('./img/banner/b1.jpg');
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white; 
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+.pagination a{
+    padding: 10px 15px;
+    background-color: green;
+    margin: 5px;
+    color: white;
+}
+
+.sproduct{
+    display: flex;
+    border: 1px solid black;
+}
+.smainimg{
+    width: 30%;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+
+
+
+}
+.simg{
+    width: 100%;
+    box-shadow: 8px 8px 8px #888888;
+}
+
+.ssimg img{
+    width: 100%;
+    height: 30rem;
+}
+.sproduct .partimg{
+    display: flex;
+    margin: .4rem 0rem;
+    width: 100%;
+    box-shadow: 8px 8px 8px #888888;
+}
+.sproduct .partimg div{
+    width: 100%;
+    height: 8rem;
+    margin: 0rem .1rem;
+
+}
+.sproduct .partimg img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.stext{
+    width: 70%;
+    margin: 3rem 3rem;
+}
+.stext .subtext{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-transform: capitalize;
+}
+.stext .subtext h2{
+    font-size: 2rem;
+}
+.stext .subtext select{
+    width: fit-content;
+    padding: 10px 15px;
+}
+.stext .subtext .price{
+    display: flex;
+    gap: 1rem;
+}
+.stext .subtext .price .one{
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+.stext .subtext .price button{
+    padding: 0px 5px;
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.stext .subtext .pd{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.stext .subtext .pl{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#bloging{
+background-image: url('./img/banner/b19.jpg');
+height: 15rem;
+display: flex;
+align-items: center;
+color: white;
+}
+
+.blogcom{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.blogsub{
+    display: flex;
+    align-items: center;
+}
+.blogsub .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 2rem;
+    width: 30rem;
+    text-transform: capitalize;
+    
+}
+
+.blogsub img{
+    width: 40rem;
+    height: 20rem;
+}
+
+#aboutbanner{
+    background-image: url('./img/about/banner.png');
+    height: 15rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.abouttxt{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.abouttxt>:nth-child(1){
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.blogwho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    
+}
+.blogwho .img{
+    width: 35rem;
+    margin-left: 4rem;
+}
+.blogwho .img img{
+    flex: 1;
+    width: 35rem;
+    height: 20rem;
+}
+.blogwho .txt{
+    flex: 1;
+    width: 15rem;
+    padding: 0px 27px;
+}
+
+.aboutapp{
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: purple;
+    font-size: 1.4rem;
+}
+.aboutapp .aboutvideo{
+    width: 100%;
+    margin-top: 2rem;
+    
+}
+.aboutapp .aboutvideo video{
+    width: 50%;
+    border-radius: 20px; 
+}
+
+.contact{
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-around;
+    width: 100%;
+}
+.contacttxt{
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 4rem;
+    gap: 1rem;
+    width: 40%;
+
+}
+.contacttxt>:nth-child(1){
+    color: grey;
+}
+.contacttxt ul{
+    margin-top: -10px;
+    list-style: none;
+    padding-top: 10px;
+}
+.contacttxt ul li{
+    padding-top: 10px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.contacttxt ul li span{
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+
+.contactmap{
+    width: 40%;
+    padding-top: 20px;
+}
+.contactmap div{
+    width: 1rem;
+    margin-right: 20px;
+}
+
+.message{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+.message .form{
+    margin-top: 1rem;
+    box-shadow: 10px 10px 8px #888888;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    width: 100%;
+    flex: 1;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+.msgbtn{
+    padding: 0px 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+}
+.message .form>:nth-child(1){
+    color: grey;
+    padding-bottom: 10px;
+    padding-left: 12px;
+}
+.message .form>:nth-child(2){
+    padding-left: 10px;
+    padding-bottom: -20px;
+    margin-bottom: -10px;
+}
+.message .form .input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 90% ;
+}
+.message .form .input input{
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+.coments{
+    flex: 1;
+}
+
+.cmtbox{
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-transform: capitalize;
+}
+.cmtbox p{
+    color: grey;
+    padding-top: 5px;
+}
+
+.crttable{
+    width: 95%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-top: 3rem;
+}
+.head{
+    border-top: 2px solid  grey;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    margin: 20px;
+}
+.head tr td{
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.pimg{
+    width: 90px;
+    margin-left: -20px;
+}
+.crtbdy tr td{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.sh{
+    padding-left: 10px;
+
+}
+
+.pr{
+    padding-left: 10px;
+
+}
+.quan{
+    padding-left: 30px;
+    margin-left: 20px;
+
+    
+}
+.ppp{
+    padding-left: 20px;   
+}
+.coupon{
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+}
+.aplycoupn{
+    margin-left: 5rem;
+}
+.aplycoupn input{
+    padding: 10px 10px;
+    width: 25rem;
+    margin-top: 1px;
+}
+.aplycoupn button{
+    padding: 7px 20px;
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+}
+.cprice{
+    border: 1px solid grey;
+    width: 40rem;
+    padding: 2rem 0rem;
+    margin-bottom: 1rem;
+}
+.cprice h2{
+    padding-left: 34px;
+}
+.ctable{
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.ctable tr{
+    margin-top: 2rem;
+    padding-top: 20rem;
+}
+.ctable tr td{
+    padding: 10px 0px;
+    border: 2px solid aqua;
+}
+.ctable tr td span{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: grey;
+    padding-left: 10px;
+}
+.cprice button{
+    padding: 7px 20px;
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    opacity: .8;
+    border-radius: 7px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+
+    .nav{
+        padding: 1rem 1rem;
+    }
+    .nav .logo img{
+        width: 6rem;
+        height: 3rem;
+    }
+    .nav #items{
+        gap: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .coments{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .nav{
+        padding: 1rem 3rem;
+    }
+    #menu1{
+        display: block;
+        font-size: 1.3rem;
+    }
+    .nav .login{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .nav .cart{
+        font-size: 1.3em;
+    }
+    .nav #items{
+        display: block;
+        position: fixed;
+        color: white;
+        top: 5.2rem;
+        left: -100vw;
+        background-color: black;
+        width: 25rem;
+        height: 100%;
+        padding: 2rem 0rem;
+        text-align: center;
+    }
+    .nav #items.active{
+        left: 0;
+    }
+    .nav #items li{
+        line-height: 20px;
+        padding: 1.4rem 0;
+        font-size: 1.4rem;
+    }
+    .nav form{
+        position: fixed;
+        left: -100vw;
+        top: 29rem;
+        width: 21.5rem;
+        display: flex;
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+    .nav #form1.formm{
+        left: 5px;
+    }
+    .nav form input{
+        min-width: 100%;
+        max-height: 100%;
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+    }
+
+    .banner span{
+        padding-top: 25px;
+    }
+
+    .feature{
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .feature .pro{
+        width: 26%;
+    }
+    .sproduct{
+        display: flex;
+        border: 1px solid black;
+        flex-direction: column;
+
+    }
+    .smainimg{
+        width: 100%;
+        margin-left: 1px;
+    }
+    .simg{
+        width: 100%;
+    }
+    
+    .ssimg img{
+        width: 100%;
+        height: 30rem;
+    } 
+    .stext{
+        width: 100%;
+        margin: .1rem;
+    }
+    .stext .subtext{
+        padding: 10px 15px;
+    }
+
+    .blogsub{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    .blogsub .text{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-transform: capitalize;
+        padding-right: 20px;
+        margin-left: -30px;
+    }
+    .blogsub .bimg{
+        width: 100%;
+        padding-right: 20px;
+        
+    }
+    
+    .blogsub img{
+        width: 100%;
+        height: 20rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .blogwho{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .blogwho .img{
+        width: 100%;
+        margin: 0 !important;
+    }
+    .blogwho .img img{
+       width: 100%;
+    }
+    .blogwho .txt{
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-top: 10rem;
+    }
+    .aboutapp .aboutvideo video{
+        width: 50%;
+        border-radius: 20px; 
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+    .contacttxt{
+        
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .contacttxt>:nth-child(1){
+        color: grey;
+        font-size: 1.2rem;
+    }
+    .contacttxt>:nth-child(2){
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .contactmap{
+        width: 100%;
+       
+    }
+
+    .contactmap div{
+        width: 100vw;
+    }
+    
+    .contactmap div iframe{
+        width: 22rem;
+        padding-left: 1.5rem;
+        
+
+    }
+    .contactmap div{
+        width: 1rem;
+        margin-right: 20px;
+    }
+
+
+    .message{
+        display: flex;
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .message .form{
+        margin-top: 1rem;
+        box-shadow: 10px 10px 8px #888888;
+        margin-left: 1rem;
+        text-transform: capitalize;
+        width: 100%;
+        flex: 1;
+        margin-left: 10px;
+        margin: 0 !important;
+    }
+    .message .form>:nth-child(1){
+        color: grey;
+        padding-bottom: 20px;
+        padding-left: 12px;
+    }
+    .message .form>:nth-child(2){
+        padding-left: 10px;
+        padding-bottom: -20px;
+        margin-bottom: -10px;
+        text-align: center;
+    }
+    .message .form .input{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        width: 100% ;
+    }
+    .message .form .input input{
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
+    .coments{
+        flex: 1;
+    
+    }
+    
+
+    
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+  
+}
+@media screen and (max-width: 500px){
+    .nav{
+        padding: 1rem 1rem;
+    }
+    .nav #items{
+        display: block;
+        position: fixed;
+        color: white;
+        top: 5.2rem;
+        left: -100vw;
+        background-color: black;
+        width: 15rem;
+        height: 100%;
+        padding: 2rem 0rem;
+        text-align: center;
+    }
+    .nav #items.active{
+        left: 0;
+    }
+    .nav #items li{
+        line-height: 20px;
+        padding: 1.4rem 0;
+        font-size: 1.4rem;
+    }
+    .nav #form1{
+        position: absolute;
+        left: -100vw;
+        top: 29rem;
+        width: 12rem;
+        display: flex;
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        border: 2px solid blue;
+    }
+    .nav #form1.formm{
+        left: 0;
+    }
+    .nav form input{
+        min-width: 100%;
+        max-height: 100%;
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+    }
+
+    #menu1{
+        display: block;
+        font-size: 1.1rem;
+    }
+    .nav .login{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .nav .cart{
+        font-size: 1.1em;
+    }
+
+    .banner span{
+        padding-top: 15px;
+    }
+    .banner>:nth-child(1){
+        font-size: 1.1rem;
+    }
+    .banner>:nth-child(2){
+        font-size: 2.1rem;
+       
+    }
+    .banner>:nth-child(3){
+        font-size: 2rem;
+       
+    }
+    .banner>:nth-child(4){
+        padding-top: 13px;
+    }
+    .banner .btn{
+       
+        margin-top: 20px;
+        margin-left: 2rem;
+    }
+
+    .feature{
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .crazy-deals{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin-top: 4rem;
+        gap: 1rem;
+    }
+    .crazy-deals div{
+        width: 100%;
+        
+        height: 25rem;
+        
+    }
+    .season-sale{
+        margin-top: 3rem;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        padding: 0px 20px;
+    
+    }
+    .season-sale div{
+        width: 100%;
+        height: 28rem;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-left: 20px;
+        border: none;  
+    }
+
+    .featureproduct .pfea{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .featureproduct .pfbox{
+        width: 100%;
+        border: 2px solid white;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 2px 4px #888888;
+    }
+
+    .signup{
+        background-color: blue;
+        width: 100%;
+      
+        
+        
+    }
+    .signup .sub{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+
+    } 
+    .signup .txt{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .signup .txt p{
+        padding-top: 10px;
+    }
+    .signup .form{
+        padding-right: 20px;
+        margin-right: 20px;
+        color: white;
+        background-color: white;
+        height: 3rem;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .signup .form button{
+        height: 100%;
+        width: 30%;
+        background-color: aqua;
+        padding: none;
+        margin: none;
+        border: none;
+    }
+    .signup .form input{
+        height: 100%;
+        padding: 10px;
+        width: 18rem;
+        border: none;
+        outline: none;
+    }
+
+    .footer{
+        box-shadow: 10px 10px 8px 8px #888888;
+        width: 100%;
+    }
+    .footer-sub{
+        box-shadow: 10px 10px 8px 8px #888888;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5rem 5rem;
+        gap: 2rem;
+        
+    }
+    .footer-sub .sme{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-transform: capitalize;
+        text-align: center;
+    }
+  
+
+}
